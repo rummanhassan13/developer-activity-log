@@ -2,18 +2,23 @@ name: Update activity log
 
 on:
   schedule:
-    # Times are in Pakistan Standard Time
-    - cron: "17 9 * * *"
+    # Every 3 days — Pakistan Standard Time
+    - cron: "17 9 */3 * *"
       timezone: "Asia/Karachi"
-    - cron: "43 11 * * *"
+
+    - cron: "43 11 */3 * *"
       timezone: "Asia/Karachi"
-    - cron: "11 14 * * *"
+
+    - cron: "11 14 */3 * *"
       timezone: "Asia/Karachi"
-    - cron: "37 16 * * *"
+
+    - cron: "37 16 */3 * *"
       timezone: "Asia/Karachi"
-    - cron: "23 19 * * *"
+
+    - cron: "23 19 */3 * *"
       timezone: "Asia/Karachi"
-    - cron: "51 21 * * *"
+
+    - cron: "51 21 */3 * *"
       timezone: "Asia/Karachi"
 
   workflow_dispatch:
